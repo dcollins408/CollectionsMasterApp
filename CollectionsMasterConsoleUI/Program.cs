@@ -94,8 +94,8 @@ namespace CollectionsMasterConsoleUI
             
 
             //: Print the new capacity
-	    int updatedCap = intList.Capacity; 
-	    Console.WriteLine("The updated capacity is " + updatedCap);
+	    // int updatedCap = intList.Capacity; 
+	    Console.WriteLine("The updated capacity is " + cap);
             Console.WriteLine("---------------------");
 
             //: Create a method that prints if a user number is present in the list
@@ -157,9 +157,9 @@ namespace CollectionsMasterConsoleUI
 	   } 
         }
 
-        private static List<iList> OddKiller(List<int> iList)
+        private static void OddKiller(List<int> iList)
         {
-            for (int j = 0; j < 50; j++)
+            for (int j = 0; j < iList.Count; j++)
 	    {
 		if (iList[j] % 2 == 0)
 		{
@@ -168,10 +168,10 @@ namespace CollectionsMasterConsoleUI
 		else
 		{
 			Console.WriteLine(iList[j] + " is odd and will be removed from the list.");
-			iList.Remove(j);	
+			iList.RemoveAt(j);	
 		}
 	    }
-	    return iList;
+	    //return iList;
 
         }
 
