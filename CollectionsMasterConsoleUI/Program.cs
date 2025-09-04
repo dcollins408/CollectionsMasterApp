@@ -129,7 +129,7 @@ namespace CollectionsMasterConsoleUI
             //: Sort the list then print results
             Console.WriteLine("Sorted Evens!!");
             intList.Sort();
-	    for (int q = 0; q < 50; q++)
+	    for (int q = 0; q < intList.Count; q++)
 	    {
 		    Console.WriteLine(intList[q]);
 	    }
